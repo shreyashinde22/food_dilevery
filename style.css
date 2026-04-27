@@ -1,9 +1,7 @@
-.section-hidden {
-  display: none;
-}
-
-.section-visible {
-  display: block;
+/* Global Styling */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 /* Headings & Paragraphs */
@@ -18,6 +16,10 @@
   color: #555;
 }
 
+.text-orange {
+  color: #f57912;
+}
+
 /* Buttons */
 .button-one {
   background-color: #f57912;
@@ -26,69 +28,64 @@
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(245, 121, 18, 0.2);
 }
 
 .button-one:hover {
-  background-color: #f57912;
-}
-
-.button-two {
-  background-color: #f57912;
+  background-color: #d1630a;
   color: #fff;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(245, 121, 18, 0.3);
 }
 
-.button-two:hover {
-  background-color: #555;
+/* Carousel Additions */
+.carousel-image {
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.8);
 }
 
-
-.diwali-card-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.diwali-card-item img {
+.bg-dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin-bottom: 10px;
-  max-height: 160px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Menu Cards */
+.menu-card {
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.item-img {
+  height: 220px;
   object-fit: cover;
 }
 
-/* Footer */
+/* Footer additions */
 .bg-color {
-  background-color: #222;
-}
-
-.para_fotter {
-  color: #bbb;
-  font-size: 0.9rem;
-}
-.carousel-item img {
-  width: 100%;
-  height: 100vh;        
-  object-fit: cover;
-}
-
-.bg-color {
-    background-color: #020c13;
-    background-size: cover;
+  background-color: #1a1a1a;
 }
 
 .para {
-    color: #5a7184;
+  color: #a0a0a0;
+  font-size: 0.95rem;
 }
 
-.background {
-    background-color: #7b8794;
-    border-radius: 50px;
+.para a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: 0.2s;
 }
+
+.para a:hover {
+  color: #f57912;
+}
